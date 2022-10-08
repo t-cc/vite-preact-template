@@ -9,7 +9,8 @@
     "preact",
     "plugin:import/recommended",
     "plugin:react-hooks/recommended",
-    "@z1digitalstudio/eslint-config-imports"
+    "@z1digitalstudio/eslint-config-imports",
+    "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
