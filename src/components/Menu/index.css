@@ -1,0 +1,20 @@
+
+.menu__item > .menu--sub {
+  transform-origin: left top;
+  transition: max-height  .3s ease-in-out, opacity .2s ease-in-out;
+}
+
+.menu__item--closed > .menu--sub {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0.3;
+}
+.menu__item--open > .menu--sub {
+  max-height: 50rem;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.menu--sub .menu__link {
+  @apply p-3
+}

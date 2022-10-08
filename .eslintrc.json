@@ -1,0 +1,57 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    // "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "preact",
+    "plugin:import/recommended",
+    "plugin:react-hooks/recommended",
+    "@z1digitalstudio/eslint-config-imports"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["preact", "@typescript-eslint", "unused-imports"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+    // 'import/no-relative-parent-imports': 'error',
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          {
+            "group": ["../*"],
+            "message": "Usage of relative parent imports is not allowed."
+          }
+        ]
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "arrow-body-style": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
+    }
+  }
+}

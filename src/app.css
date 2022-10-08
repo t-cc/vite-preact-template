@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+  @apply text-gray-700;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  @apply max-w-3xl mx-auto px-4;
+}
+
+p {
+  @apply my-4;
+}
