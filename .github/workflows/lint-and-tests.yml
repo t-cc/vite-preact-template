@@ -1,0 +1,11 @@
+name: Lint and Test
+run-name: ${{ github.actor }} is lint and testing
+on: [push, pull_request]
+jobs:
+  Lint-And-Testing:
+    runs-on: alpine-node
+    steps:
+      - name: Install dependencies
+      - run: yarn install
+      - name: Linting files
+      - run: yarn lint:fix
