@@ -1,11 +1,11 @@
 export const MENU_MOCK = [
   {
     label: 'Home',
-    uri: '/'
+    uri: '#'
   },
   {
     label: 'About',
-    uri: '/about'
+    uri: '#'
   },
   {
     label: 'Links',

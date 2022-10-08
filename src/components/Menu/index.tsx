@@ -22,7 +22,7 @@ export function Menu({ menu, toggleSidebar }: MenuProps): h.JSX.Element {
           <a
             href="#"
             class="block p-4 no-underline font-bold text-vite-blue border-b border-gray-200
-            hover:bg-gray-100 active:bg-vite-violet transition-colors md:text-xl"
+            hover:bg-gray-100 active:bg-vite-violet active:text-vite-yellow transition-colors md:text-xl"
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -49,7 +49,7 @@ export function Menu({ menu, toggleSidebar }: MenuProps): h.JSX.Element {
           <a
             href={uri}
             class="block p-4 no-underline font-bold text-vite-blue border-b border-gray-200
-            hover:bg-gray-100 active:bg-vite-violet transition-colors md:text-xl"
+            hover:bg-gray-100 active:bg-vite-violet active:text-vite-yellow transition-colors md:text-xl"
             target="_blank"
             rel="noreferrer">
             {label}
@@ -61,7 +61,8 @@ export function Menu({ menu, toggleSidebar }: MenuProps): h.JSX.Element {
       <li class="menu__item block">
         <Link
           href={uri}
-          class="block p-4 no-underline font-bold text-vite-blue border-b border-gray-200 hover:bg-gray-100 active:bg-vite-violet transition-colors md:text-xl"
+          class="block p-4 no-underline font-bold text-vite-blue border-b border-gray-2000
+          hover:bg-gray-100 active:bg-vite-violet active:text-vite-yellow transition-colors md:text-xl"
           onClick={() => toggleSidebar?.()}>
           {label}
         </Link>
