@@ -5,6 +5,7 @@ jobs:
   Lint-And-Testing:
     runs-on: alpine-node
     steps:
+      - uses: actions/checkout@v2
       - name: Install dependencies
       - run: yarn install
       - name: Linting files
