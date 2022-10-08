@@ -16,7 +16,7 @@
     "lint:fix": "eslint ./src/**/**.ts[x] --fix",
     "coverage": "vitest --coverage",
     "test": "vitest --run",
-    "test:watch": "vitest --watch"
+    "test:watch": "vitest --watch --coverage"
   },
   "lint-staged": {
     "./src/**/*.{ts,tsx,js,jsx}": [
@@ -49,6 +49,7 @@
     "@testing-library/preact": "^3.2.2",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
+    "@vitest/coverage-c8": "^0.24.0",
     "@z1digitalstudio/eslint-config-imports": "^1.0.0",
     "babel-loader": "^8.2.5",
     "core-js": "^3.25.5",
@@ -69,7 +70,7 @@
     "jest": "^29.1.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "vitest": "^0.24.0",
+    "vitest": "^0.23.4",
     "vitest-dom": "^0.0.4"
   },
   "alias": {

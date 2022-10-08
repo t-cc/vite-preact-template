@@ -22,10 +22,7 @@
       "$/*": ["./src/*"]
     }
   },
-  "include": ["src"],"exclude": [
-    "**/test.tsx",
-    "**/stories.tsx",
-    "**/test-setup.ts"
-  ],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": ["src"],
+  "exclude": ["**/test.tsx", "**/stories.tsx", "**/test-setup.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
