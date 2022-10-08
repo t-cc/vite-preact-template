@@ -14,6 +14,7 @@
     "lint": "eslint ./src/**/**.ts[x]",
     "precommit": "tsc --noEmit && lint-staged && vitest --run",
     "lint:fix": "eslint ./src/**/**.ts[x] --fix",
+    "prettier": "prettier src/**/**.ts[x] --write",
     "coverage": "vitest --coverage",
     "test": "vitest --run",
     "test:watch": "vitest --watch --coverage"
